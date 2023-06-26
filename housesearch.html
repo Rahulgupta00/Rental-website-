@@ -1,0 +1,436 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Houses Search</title>
+<link rel="stylesheet" href="css/housesearch.css">
+
+<link rel="stylesheet" href="css/font.css">
+</head>
+
+<body>
+	<div class="main-container">
+		<div class="header-container">
+			<div class="header">
+				<div class="logo-holder">
+					<a href="index(New).html"><img src="images/header/logo.png" alt=""></a>
+				</div>
+				<div class="navigation-holder">
+					<ul class="navigation">
+						<li style="margin-left: 0;"><a href="index(New).html">Home</a></li>
+						<li><a href="guide.html">Guide</a></li>
+						<li><a href="about-us(New).html">About Us</a></li>
+						<li id="services-border"><a href="rental-service(New).html">Services</a></li>
+					</ul>
+					<div class="header-profile-holder">
+						<img src="images/header/profile.png" alt="">
+					</div>
+				</div>
+			</div>
+
+			<img class="header-border" src="images/header/brush-line.png" alt="">
+		</div>
+		
+		<div class="propertysearchcontainer">
+			<div class="searchcontainer">
+				<div class="searchtitle">Find Your Satisfied House Here</div>
+				<br>
+				<div class="searchbar">
+					<form>
+						<input type="text" name="search" placeholder="Enter Your Area Here">
+					</form>
+				</div>
+				<br>
+				<div class="pricerange">
+					Price Range: 
+					<input type="range" min="1" max="1000" value="1" class="slider" oninput="UpdatePrice(this.value)" onchange="UpdatePrice(this.value)">
+					<br>
+					<pre style="margin-top: 0px;text-align: left;">                      RM1                       RM1000</pre>
+					<div id="price">
+						Price @ RM1
+					</div>
+				</div>
+			</div>
+			
+			<img src="images/propertysearch/line.png" alt="" class="imageline">
+			
+			<div class="houseresultcontainer">
+				<div class="houseresultrow">
+					<a href="#">
+						<div class="houseresultholder" style="margin-left: 0px;">
+							<div class="imagefilter"></div>
+							<div class="hovertext">Click For<br>More Infomation</div>
+							<div class="houseresultborderbox">
+								<div class="houseresultrow" style="margin-top: 0px;">
+									<div class="houseresultdetail">
+										<div class="housedetailtitle">Subang Jaya@ Houses for Rent</div>
+										<div class="houseresultprice">RM1000 per Month</div>
+										<div class="houseresultlocation">
+											<img src="images/propertysearch/locationicon.png" alt="" style="width: 7px;height: 11px;">
+											USJ 7, Subang Jaya
+											<br>
+											<img src="images/propertysearch/roomicon.png" alt="" style="width: 7px;height: 11px;">
+											1 Master room, 3 rooms
+										</div>
+										<div class="houseresultavailable">
+											Available<br />
+
+											<img src="images/propertysearch/roomicon.png" style="width: 7px;height: 11px;" alt=""> 2
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="#">
+						<div class="houseresultholder">
+							<div class="imagefilter"></div>
+							<div class="hovertext">Click For<br>More Infomation</div>
+							<div class="houseresultborderbox">
+								<div class="houseresultrow" style="margin-top: 0px;">
+									<div class="houseresultdetail">
+										<div class="housedetailtitle">Subang Jaya@ Houses for Rent</div>
+										<div class="houseresultprice">RM1000 per Month</div>
+										<div class="houseresultlocation">
+											<img src="images/propertysearch/locationicon.png" alt="" style="width: 7px;height: 11px;">
+											USJ 7, Subang Jaya
+											<br>
+											<img src="images/propertysearch/roomicon.png" alt="" style="width: 7px;height: 11px;">
+											1 Master room, 3 rooms
+										</div>
+										<div class="houseresultavailable">
+											Available<br />
+
+											<img src="images/propertysearch/roomicon.png" style="width: 7px;height: 11px;" alt=""> 2
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="#">
+						<div class="houseresultholder">
+							<div class="imagefilter"></div>
+							<div class="hovertext">Click For<br>More Infomation</div>
+							<div class="houseresultborderbox">
+								<div class="houseresultrow" style="margin-top: 0px;">
+									<div class="houseresultdetail">
+										<div class="housedetailtitle">Subang Jaya@ Houses for Rent</div>
+										<div class="houseresultprice">RM1000 per Month</div>
+										<div class="houseresultlocation">
+											<img src="images/propertysearch/locationicon.png" alt="" style="width: 7px;height: 11px;">
+											USJ 7, Subang Jaya
+											<br>
+											<img src="images/propertysearch/roomicon.png" alt="" style="width: 7px;height: 11px;">
+											1 Master room, 3 rooms
+										</div>
+										<div class="houseresultavailable">
+											Available<br />
+
+											<img src="images/propertysearch/roomicon.png" style="width: 7px;height: 11px;" alt=""> 2
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				
+				<div class="houseresultrow">
+					<a href="#">
+						<div class="houseresultholder" style="margin-left: 0px;">
+							<div class="imagefilter"></div>
+							<div class="hovertext">Click For<br>More Infomation</div>
+							<div class="houseresultborderbox">
+								<div class="houseresultrow" style="margin-top: 0px;">
+									<div class="houseresultdetail">
+										<div class="housedetailtitle">Subang Jaya@ Houses for Rent</div>
+										<div class="houseresultprice">RM1000 per Month</div>
+										<div class="houseresultlocation">
+											<img src="images/propertysearch/locationicon.png" alt="" style="width: 7px;height: 11px;">
+											USJ 7, Subang Jaya
+											<br>
+											<img src="images/propertysearch/roomicon.png" alt="" style="width: 7px;height: 11px;">
+											1 Master room, 3 rooms
+										</div>
+										<div class="houseresultavailable">
+											Available<br />
+
+											<img src="images/propertysearch/roomicon.png" style="width: 7px;height: 11px;" alt=""> 2
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="#">
+						<div class="houseresultholder">
+							<div class="imagefilter"></div>
+							<div class="hovertext">Click For<br>More Infomation</div>
+							<div class="houseresultborderbox">
+								<div class="houseresultrow" style="margin-top: 0px;">
+									<div class="houseresultdetail">
+										<div class="housedetailtitle">Subang Jaya@ Houses for Rent</div>
+										<div class="houseresultprice">RM1000 per Month</div>
+										<div class="houseresultlocation">
+											<img src="images/propertysearch/locationicon.png" alt="" style="width: 7px;height: 11px;">
+											USJ 7, Subang Jaya
+											<br>
+											<img src="images/propertysearch/roomicon.png" alt="" style="width: 7px;height: 11px;">
+											1 Master room, 3 rooms
+										</div>
+										<div class="houseresultavailable">
+											Available<br />
+
+											<img src="images/propertysearch/roomicon.png" style="width: 7px;height: 11px;" alt=""> 2
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="#">
+						<div class="houseresultholder">
+							<div class="imagefilter"></div>
+							<div class="hovertext">Click For<br>More Infomation</div>
+							<div class="houseresultborderbox">
+								<div class="houseresultrow" style="margin-top: 0px;">
+									<div class="houseresultdetail">
+										<div class="housedetailtitle">Subang Jaya@ Houses for Rent</div>
+										<div class="houseresultprice">RM1000 per Month</div>
+										<div class="houseresultlocation">
+											<img src="images/propertysearch/locationicon.png" alt="" style="width: 7px;height: 11px;">
+											USJ 7, Subang Jaya
+											<br>
+											<img src="images/propertysearch/roomicon.png" alt="" style="width: 7px;height: 11px;">
+											1 Master room, 3 rooms
+										</div>
+										<div class="houseresultavailable">
+											Available<br />
+
+											<img src="images/propertysearch/roomicon.png" style="width: 7px;height: 11px;" alt=""> 2
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				
+				<div class="houseresultrow">
+					<a href="#">
+						<div class="houseresultholder" style="margin-left: 0px;">
+							<div class="imagefilter"></div>
+							<div class="hovertext">Click For<br>More Infomation</div>
+							<div class="houseresultborderbox">
+								<div class="houseresultrow" style="margin-top: 0px;">
+									<div class="houseresultdetail">
+										<div class="housedetailtitle">Subang Jaya@ Houses for Rent</div>
+										<div class="houseresultprice">RM1000 per Month</div>
+										<div class="houseresultlocation">
+											<img src="images/propertysearch/locationicon.png" alt="" style="width: 7px;height: 11px;">
+											USJ 7, Subang Jaya
+											<br>
+											<img src="images/propertysearch/roomicon.png" alt="" style="width: 7px;height: 11px;">
+											1 Master room, 3 rooms
+										</div>
+										<div class="houseresultavailable">
+											Available<br />
+
+											<img src="images/propertysearch/roomicon.png" style="width: 7px;height: 11px;" alt=""> 2
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="#">
+						<div class="houseresultholder">
+							<div class="imagefilter"></div>
+							<div class="hovertext">Click For<br>More Infomation</div>
+							<div class="houseresultborderbox">
+								<div class="houseresultrow" style="margin-top: 0px;">
+									<div class="houseresultdetail">
+										<div class="housedetailtitle">Subang Jaya@ Houses for Rent</div>
+										<div class="houseresultprice">RM1000 per Month</div>
+										<div class="houseresultlocation">
+											<img src="images/propertysearch/locationicon.png" alt="" style="width: 7px;height: 11px;">
+											USJ 7, Subang Jaya
+											<br>
+											<img src="images/propertysearch/roomicon.png" alt="" style="width: 7px;height: 11px;">
+											1 Master room, 3 rooms
+										</div>
+										<div class="houseresultavailable">
+											Available<br />
+
+											<img src="images/propertysearch/roomicon.png" style="width: 7px;height: 11px;" alt=""> 2
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="#">
+						<div class="houseresultholder">
+							<div class="imagefilter"></div>
+							<div class="hovertext">Click For<br>More Infomation</div>
+							<div class="houseresultborderbox">
+								<div class="houseresultrow" style="margin-top: 0px;">
+									<div class="houseresultdetail">
+										<div class="housedetailtitle">Subang Jaya@ Houses for Rent</div>
+										<div class="houseresultprice">RM1000 per Month</div>
+										<div class="houseresultlocation">
+											<img src="images/propertysearch/locationicon.png" alt="" style="width: 7px;height: 11px;">
+											USJ 7, Subang Jaya
+											<br>
+											<img src="images/propertysearch/roomicon.png" alt="" style="width: 7px;height: 11px;">
+											1 Master room, 3 rooms
+										</div>
+										<div class="houseresultavailable">
+											Available<br />
+
+											<img src="images/propertysearch/roomicon.png" style="width: 7px;height: 11px;" alt=""> 2
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			
+			<img src="images/propertysearch/line.png" alt="" class="imageline">
+			
+			<div class="pagenumber">
+				
+				<ul>
+					<img src="images/propertysearch/left.png" alt="">
+					<li class="number" onClick="UpdatePageNumber(this)">1</li>
+					<li class="number" onClick="UpdatePageNumber(this)">2</li>
+					<li class="number" onClick="UpdatePageNumber(this)">3</li>
+					<li class="number" onClick="UpdatePageNumber(this)">4</li>
+					<li class="number" onClick="UpdatePageNumber(this)">5</li>
+					<li class="number" onClick="UpdatePageNumber(this)">6</li>
+					<li class="number" onClick="UpdatePageNumber(this)">7</li>
+					<li class="number" onClick="UpdatePageNumber(this)">8</li>
+					<li class="number" onClick="UpdatePageNumber(this)">9</li>
+					<li class="number" onClick="UpdatePageNumber(this)">10</li>
+					<img src="images/propertysearch/right.png" alt="">
+				</ul>
+	
+				
+			</div>
+		</div>
+	
+		<div class="footer-container">
+				<div class="footer">
+
+						<img class="footer-border" src="images/header/brush-line.png" alt="">
+						<div class="foot-nav-holder">
+							<div class="foot-nav-left">
+								<div class="foot-nav-box">
+									<p class="foot-nav-title">Follow Us</p>
+									<ul>
+										<li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+									<li><a href="https://twitter.com/?lang=en" target="_blank">Twitter</a></li>
+									<li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+									<li><a href="https://www.instagram.com/?hl=en" target="_blank">Instagram</a></li>
+									</ul>
+								</div>
+								<div class="foot-nav-box">
+									<p class="foot-nav-title">About Us</p>
+									<ul>
+										<li><a href="about-us(New).html#serviceLocation">Location</a></li>
+										<li><a href="about-us(New).html#contactUs">Contact Us</a></li>
+										<li><a href="about-us(New).html">About Us</a></li>
+									</ul>
+								</div>
+								<div class="foot-nav-box">
+									<p class="foot-nav-title">Rental Service</p>
+									<ul>
+										<li><a href="housesearch.html">Houses</a></li>
+										<li><a href="apartmentsearch.html">Apartment</a></li>
+									</ul>
+								</div>
+								<div class="foot-nav-box">
+									<p class="foot-nav-title">Help Us Improve</p>
+								<ul>
+									<li><a href="https://docs.google.com/forms/d/116PhoALiZ1dXQGXSMJOY2iwgaWisMO0DxaGyMWSgk_M/edit" target="_blank">Feedback</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="foot-nav-right">
+								<div class="foot-notify-box">
+									<p class="foot-notify-title1">Want to know more about us?</p>
+									<p class="foot-notify-title2">Leave your email to get the latest deals and news</p>
+
+									<input type="text" autocomplete="off" class="notify-input"  placeholder="     Enter Your Email" value="">
+							</div>
+						</div>
+
+					</div>
+					<div class="foot-logo-holder">
+						<div class="partner-logo-holder">
+							<a href="https://www.airbnb.com/" target="_blank">
+								<img src="images/footer/airbnb.png" style="margin-left: 2%; margin-top: 1%;" alt="">
+							</a>
+							<a href="https://www.expedia.com.my/" target="_blank">
+								<img src="images/footer/expedia.png" style="margin-top: 18px;" alt="">
+							</a>
+							<a href="https://www.booking.com/" target="_blank">
+								<img src="images/footer/booking.com.png" style="margin-top: 25px;" alt="">
+							</a>
+							<a href="https://www.tripadvisor.com.my/" target="_blank">
+								<img src="images/footer/tripadvisor.png"  style="margin-top: 18px;" alt="">
+							</a>
+						</div>
+						<div class="social-logo-holder">
+							<a href="https://www.facebook.com/" target="_blank"><img src="images/footer/fb.png" alt=""></a>
+							<a href="https://twitter.com/?lang=en" target="_blank"><img src="images/footer/twitter.png" alt=""></a>
+							<a href="https://www.youtube.com/" target="_blank"><img src="images/footer/youtube.png" alt=""></a>
+							<a href="https://www.instagram.com/?hl=en" target="_blank"><img src="images/footer/insta.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+<script>
+	
+	/* set the first number background color when page first loaded*/
+	var number = document.getElementsByClassName('number');
+	number[0].style.backgroundColor = '#B8DFF2';
+	
+	/* end */
+	
+	function UpdatePrice(price){
+		document.getElementById("price").innerHTML = "Price @ RM"+price;
+	};
+	
+	
+	
+	//function for updating the page number when clicked	
+	function UpdatePageNumber(target){
+		
+		var allNumber = document.getElementsByClassName('number');
+		
+		//reset all number to transparent background
+		for(i= 0;i < allNumber.length; i++){
+			allNumber[i].style.backgroundColor='transparent';
+		}
+		
+		//set the selected number --> blue background color
+		target.style.backgroundColor = '#B8DFF2';
+		
+	};
+</script>
+</html>
